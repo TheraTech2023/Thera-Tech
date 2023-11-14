@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheraTech Mental Health Chatbot</title>
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+        /* Body and basic styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Container for content */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        /* Header with logo */
+        header {
+            background: #fff; /* White background for the header */
+            padding: 20px 0;
+        }
+
+        .logo {
+            width: 250px; /* Adjust the logo size */
+            height: auto;
+        }
+
+        /* Main content styling */
+        main {
+            margin-top: 40px;
+        }
+
+        /* Button styling */
+        button {
+            background-image: linear-gradient(45deg, #8a2be2, #da70d6); /* Gradient from logo */
+            color: white;
+            border: none;
+            border-radius: 25px; /* Rounded corners for button */
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: 600; /* Font weight similar to the logo */
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        button:hover {
+            background-image: linear-gradient(45deg, #da70d6, #8a2be2); /* Inverted gradient on hover */
+        }
+
+        /* Responsive media query */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .logo {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="path-to-your-logo.jpg" alt="TheraTech Logo" class="logo"> <!-- Update path to your logo -->
+        </header>
+        <main>
+            <h1>Welcome to TheraTech</h1>
+            <p>Your companion for mental wellness. Our chatbot is here to support you 24/7 with resources and guidance on mental health.</p>
+            <button onclick="startChat()">Start Chatting</button>
+        </main>
+    </div>
+    <script>
+        function startChat() {
+            // Logic to open the chatbot
+            // This could be a redirect, opening a modal, or embedding a chat frame.
+            // Replace with the appropriate action for your chatbot.
+            alert('Here we will start the chatbot service.');
+        }
+    </script>
+</body>
+</html>
