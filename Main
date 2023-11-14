@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheraTech Mental Health Chatbot</title>
+    <!-- Add your CSS here or link to an external stylesheet -->
+
     <style>
         /* Importing Google Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
@@ -70,11 +72,12 @@
             }
         }
     </style>
+
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="path-to-your-logo.jpg" alt="TheraTech Logo" class="logo"> <!-- Update path to your logo -->
+            <img src="path-to-your-logo.jpg" alt="TheraTech Logo" class="logo">
         </header>
         <main>
             <h1>Welcome to TheraTech</h1>
@@ -84,10 +87,8 @@
     </div>
     <script>
         function startChat() {
-            // Logic to open the chatbot
-            // This could be a redirect, opening a modal, or embedding a chat frame.
-            // Replace with the appropriate action for your chatbot.
-            alert('Here we will start the chatbot service.');
+            // Open the chat page in a new tab
+            window.open('chat.html', '_blank');
         }
     </script>
 </body>
