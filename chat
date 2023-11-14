@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with TheraTech</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .chat-container {
+            display: flex;
+            height: 100%;
+            align-items: stretch; /* Align items vertically */
+        }
+        iframe {
+            flex-grow: 1; /* Allow iframe to grow as needed */
+            width: 60%; /* Initial width of iframe */
+            height: 100vh; /* Full height of the viewport */
+            border: none; /* Remove iframe border */
+        }
+        .chat-description {
+            flex-basis: 40%; /* Initial width of description area */
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Scrollable content */
+            background-image: linear-gradient(45deg, #8a2be2, #da70d6); /* Gradient from main page */
+            color: white; /* Text color */
+            text-align: left; /* Align text to the left */
+        }
+        @media (max-width: 768px) {
+            .chat-container {
+                flex-direction: column; /* Stack iframe and description on smaller screens */
+            }
+            iframe, .chat-description {
+                width: 100%; /* Full width on small screens */
+                height: auto; /* Auto height on small screens */
+                flex-basis: auto; /* Auto basis on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <iframe src="https://mediafiles.botpress.cloud/d0baf801-d247-461e-b911-29586e388cb0/webchat/bot.html" title="TheraTech Chatbot"></iframe>
+        <div class="chat-description">
+            <h2>How Our Chatbot Can Help</h2>
+            <p>Welcome to TheraTech's support chatbot. Here is how you can interact with our bot:</p>
+            <ul>
+                <li>Type your question or concern, and our bot will provide the best possible answer or resource.</li>
+                <li>If you're feeling overwhelmed, the bot can guide you to immediate help.</li>
+                <li>Our bot is here 24/7, providing confidential support.</li>
+            </ul>
+            <p>Please note, this chatbot is not a substitute for professional medical advice.</p>
+        </div>
+    </div>
+</body>
+
+</html>
