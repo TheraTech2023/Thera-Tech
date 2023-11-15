@@ -7,68 +7,39 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-        body, html {
-            height: 100%;
+        body {
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Open Sans', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            text-align: center;
         }
+
         .chat-container {
             display: flex;
-            height: 100%;
-            align-items: stretch; /* Align items vertically */
-        }
-        iframe {
-            flex-grow: 1; /* Allow iframe to grow as needed */
-            width: 60%; /* Initial width of iframe */
-            height: 100vh; /* Full height of the viewport */
-            border: none; /* Remove iframe border */
-        }
-        .chat-description {
-            flex-basis: 40%; /* Initial width of description area */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             padding: 20px;
-            box-sizing: border-box;
-            overflow-y: auto; /* Scrollable content */
-            background-image: linear-gradient(45deg, #8a2be2, #da70d6); /* Gradient from main page */
-            color: white; /* Text color */
-            text-align: left; /* Align text to the left */
         }
-        @media (max-width: 768px) {
-            .chat-container {
-                flex-direction: column; /* Stack iframe and description on smaller screens */
-            }
-            iframe, .chat-description {
-                width: 100%; /* Full width on small screens */
-                height: auto; /* Auto height on small screens */
-                flex-basis: auto; /* Auto basis on small screens */
-            }
+
+        .chat-description {
+            background-color: #fff; /* Light background for readability */
+            border-radius: 15px; /* Soft rounded corners */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%; /* Match the .container width */
+            max-width: 600px; /* Don't get too wide on larger screens */
         }
+
+        /* If you want to add more styles, continue here */
     </style>
 </head>
 <body>
     <div class="chat-container">
-        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "composerPlaceholder": "Chat with TheraTech",
-      "botConversationDescription": "TheraTech is a chatbot designed to support your mental health and help you start changing",
-      "botId": "d0baf801-d247-461e-b911-29586e388cb0",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "d0baf801-d247-461e-b911-29586e388cb0",
-      "webhookId": "b87326bf-c723-4b2b-8ea4-1c787d2db9aa",
-      "lazySocket": true,
-      "themeName": "prism",
-      "botName": "TheraTech",
-      "avatarUrl": "file:///C:/Users/asoom/Downloads/WhatsApp%20Image%202023-11-09%20at%206.13.47%20PM.jpeg",
-      "frontendVersion": "v1",
-      "enableConversationDeletion": true,
-      "theme": "prism",
-      "themeColor": "#2563eb"
-  });
-</script>
         <div class="chat-description">
             <h2>How Our Chatbot Can Help</h2>
             <p>Welcome to TheraTech's support chatbot. Here is how you can interact with our bot:</p>
@@ -79,7 +50,29 @@
             </ul>
             <p>Please note, this chatbot is not a substitute for professional medical advice.</p>
         </div>
+        <!-- Botpress Chat Widget will be injected here -->
     </div>
-</body>
 
+    <!-- Botpress Chat Widget Embed Script -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with TheraTech",
+          "botConversationDescription": "TheraTech is a chatbot designed to support your mental health and help you start changing",
+          "botId": "d0baf801-d247-461e-b911-29586e388cb0",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "d0baf801-d247-461e-b911-29586e388cb0",
+          "webhookId": "b87326bf-c723-4b2b-8ea4-1c787d2db9aa",
+          "lazySocket": true,
+          "themeName": "prism",
+          "botName": "TheraTech",
+          "avatarUrl": "path-to-avatar-image", // Replace with a valid URL to the avatar image
+          "frontendVersion": "v1",
+          "enableConversationDeletion": true,
+          "theme": "prism",
+          "themeColor": "#2563eb"
+      });
+    </script>
+</body>
 </html>
