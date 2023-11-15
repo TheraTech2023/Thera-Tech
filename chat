@@ -49,7 +49,26 @@
 </head>
 <body>
     <div class="chat-container">
-        <iframe src="https://mediafiles.botpress.cloud/d0baf801-d247-461e-b911-29586e388cb0/webchat/bot.html" title="TheraTech Chatbot"></iframe>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with TheraTech",
+      "botConversationDescription": "TheraTech is a chatbot designed to support your mental health and help you start changing",
+      "botId": "d0baf801-d247-461e-b911-29586e388cb0",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "d0baf801-d247-461e-b911-29586e388cb0",
+      "webhookId": "b87326bf-c723-4b2b-8ea4-1c787d2db9aa",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "TheraTech",
+      "avatarUrl": "file:///C:/Users/asoom/Downloads/WhatsApp%20Image%202023-11-09%20at%206.13.47%20PM.jpeg",
+      "frontendVersion": "v1",
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
         <div class="chat-description">
             <h2>How Our Chatbot Can Help</h2>
             <p>Welcome to TheraTech's support chatbot. Here is how you can interact with our bot:</p>
